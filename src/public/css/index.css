@@ -1,0 +1,106 @@
+:root{
+    --bg-content: white;
+    --bg-light: #5fe4c3;
+    --bg-dark: #66c7af;
+    --txt-dark: black;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.index__header{
+    background-color: var(--bg-light);
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.index__title{
+    text-align: center;
+}
+
+.index__nav{
+    background-color: var(--bg-dark);
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 10px;
+}
+
+.index__nav__link{
+    color: var(--txt-dark);
+    text-decoration: none;
+}
+
+.index__nav__link:visited{
+    color: var(--txt-dark);
+}
+
+.index__main{
+    background: linear-gradient(var(--bg-light), var(--bg-dark));
+    display: flex;
+    flex-direction: row;
+}
+
+.index__article{
+    background-color: var(--bg-content);
+    width: 80%;
+    margin: auto;
+    min-height: 80vh;
+    padding: 0 10px;
+}
+
+.index__footer{
+    background-color: var(--bg-dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+} 
+
+.facteurs__info{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.facteurs__photo{
+    width: 40%
+}
+
+.facteurs__desc{
+    width: 60%;
+}
+
+[data-spawn]{
+    display: none;
+}
+
+.code {
+    background-color: black;
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+}
+
+.loaded-image {
+    width: 100px;
+}
+
+.facteurs__link {
+    color: var(--bg-dark)
+}
+
+.facteurs__link:visited {
+    color: var(--bg-light);
+}
+
+.augment__span::after{
+    content: "/"
+}
+
+#augment-dom{
+    display: none
+}
