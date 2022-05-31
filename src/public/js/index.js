@@ -20,7 +20,7 @@ function tradPage(){
             })
             .then(trad => {
                 let txt = trad
-                const regex = /\$\{(a|sub|code):([^:}]*)(:([^\}]*))?\}/
+                const regex = /\$\{(a|sub|code);([^;}]*)(;([^\}]*))?\}/
                 let result
                 let backup = 10
                 while((result = txt.match(regex)) !== null && backup > 0){
