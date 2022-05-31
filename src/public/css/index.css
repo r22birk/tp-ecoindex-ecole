@@ -67,7 +67,26 @@ body{
 }
 
 .facteurs__photo{
-    width: 40%
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+
+.facteurs__photo__img{
+    width: 100%;
+    margin: auto;
+}
+
+.facteurs__photo__legend{
+    font-size: 0.75em;
+    text-decoration: none;
+    color: black;
+}
+
+.facteurs__photo__legend:visited{
+    color: black;
 }
 
 .facteurs__desc{
