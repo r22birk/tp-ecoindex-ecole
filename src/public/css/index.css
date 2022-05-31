@@ -74,18 +74,18 @@ body{
     text-align: center;
 }
 
-.facteurs__photo__img{
+.facteurs__photo img{
     max-width: 100%;
     margin: auto;
 }
 
-.facteurs__photo__legend{
+.facteurs__photo span a{
     font-size: 0.75em;
     text-decoration: none; 
     color: black;
 }
 
-.facteurs__photo__legend:visited{
+.facteurs__photo span a:visited{
     color: black;
 }
 
@@ -104,15 +104,11 @@ body{
     font-size: 0.9em;
 }
 
-.loaded-image {
-    width: 100px;
-}
-
-.facteurs__link {
+section a {
     color: var(--bg-dark)
 }
 
-.facteurs__link:visited {
+section a:visited {
     color: var(--bg-light);
 }
 
