@@ -75,13 +75,13 @@ body{
 }
 
 .facteurs__photo__img{
-    width: 100%;
+    max-width: 100%;
     margin: auto;
 }
 
 .facteurs__photo__legend{
     font-size: 0.75em;
-    text-decoration: none;
+    text-decoration: none; 
     color: black;
 }
 
