@@ -7,12 +7,12 @@ const langs = [
     {name: "Français", tag: "fr"}, 
     {name: "English", tag: "en"},
     {name: "Espanol", tag: "es"},
-    {name: "Italiano", tag: "it"}
+    {name: "Italiano", tag: "it"},
+    {name: "Deutsch", tag: "de"}
 ]
 let currentLang = "fr"
 
 function tradPage(){
-    console.log("tradution")
     tradElements.forEach((el) => {
         fetch(`/api/${currentLang}/${el.dataset.trad}`)
             .then(res => {
@@ -24,7 +24,6 @@ function tradPage(){
                 let result
                 let backup = 10
                 while((result = txt.match(regex)) !== null && backup > 0){
-                    console.log(result)
                     switch(result[1]){
                         case "a": 
                             txt = txt.replace(result[0], `<a class="facteurs__link" href="${result[4]}">${result[2]}</a>`)
@@ -34,7 +33,6 @@ function tradPage(){
                         break
                         default:
                             txt = txt.replace(result[0], `<span class="${result[1]}">${result[2]}</span>`)
-                        console.log(result)
                     }
                     backup --
                 }
