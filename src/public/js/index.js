@@ -72,7 +72,7 @@ const intervalId = setInterval(() => {
 /* SEO version 2005 */
 
 const augmentDom = document.getElementById("augment-dom")
-const keywords = ["éco-index", "écoconception", "émission de CO2", "eau", "mesure d'impact", "environnement", "numérique responsable", "normes", "ademe", "analyse de cycle de vie", "acv", "avenir", "eco conception", "économie circulaire", "évaluation", "indicateurs"]
+const keywords = ["ecoindex", "écoconception", "émission de CO2", "eau", "mesure d'impact", "environnement", "numérique responsable", "normes", "ademe", "analyse de cycle de vie", "acv", "avenir", "eco conception", "économie circulaire", "évaluation", "indicateurs"]
 const DOM_SIZE_GOAL = 10000
 const DOM_LOOP_REQUIRED = DOM_SIZE_GOAL / keywords.length
 for(let i = 0; i < DOM_LOOP_REQUIRED; i++){
