@@ -93,86 +93,10 @@ body{
     width: 60%;
 }
 
-[data-spawn]{
-    display: none;
-}
-
-.code {
-    background-color: black;
-    color: yellow;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.9em;
-}
-
 section a {
     color: var(--bg-dark)
 }
 
 section a:visited {
     color: var(--bg-light);
-}
-
-.augment__span::after{
-    content: "/"
-}
-
-#augment-dom{
-    display: none
-}
-
-#carousel{
-    width: 100%;
-    height: 100vh;
-    position: relative
-}
-
-#carousel > ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.carousel-elements{
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: 200ms opacity ease-in-out;
-    overflow: hidden;
-}
-
-.carousel-elements[data-active]{
-    opacity: 1;
-    z-index: 1;
-}
-
-.carousel-button{
-    position: absolute;
-    z-index: 2;
-    background: none;
-    font-size: 4rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-    border-radius: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.carousel-button:active,
-.carousel-button:focus{
-    color: white;
-    background-color: rgba(0, 0, 0, 0.2);
-    outline: 1px solid black;
-}
-
-.carousel-button.prev{
-    left: 1rem;
-}
-
-.carousel-button.next{
-    right: 1rem;
 }
